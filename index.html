@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="fonts/remix-icon/remixicon.css">
     <link rel="stylesheet" href="fonts/bt-icon/bootstrap-icons.min.css">
     <link rel="stylesheet" href="fonts/Roboto condensed/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
@@ -46,8 +48,7 @@
         <!-- ABOUT -->
         <section id="about" class="py-5">
             <div class="container text-center">
-                <h2 class="fs-1 fw-bold mb-2">About Me</h2>
-                <span class="line"></span>
+                <h2 class="fs-1 fw-bold mb-2 title">About Me</h2>
                 <div class="row align-items-center mt-5">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <img src="img/hero.jpg" alt="Arth Photo" class="img-fluid rounded shadow">
@@ -55,7 +56,7 @@
                     <div class="col-lg-6 text-start">
                         <h3 class="fw-bold">I Am Arth Koradiya</h3>
                         <p class="text-secondary">A passionate Full Stack Developer turning problems into user-driven
-                            solutions. Skilled in HTML, CSS, Bootstrap, JavaScript, and React.</p>
+                            solutions. Skilled in HTML, CSS, Bootstrap, JavaScript, React, nodeJS and mongoDB.</p>
                         <a href="doc/CV.pdf" class="btn btn-dark btn-lg rounded-pill">Download CV</a>
                     </div>
                 </div>
@@ -65,28 +66,28 @@
         <!-- EDUCATION -->
         <section id="education" class="py-5 bg-light">
             <div class="container text-center">
-                <h2 class="fs-1 fw-bold mb-2"><i class="bi bi-book-half me-2"></i>Education</h2>
+                <h2 class="fs-1 fw-bold mb-2 title"><i class="bi bi-book-half me-2"></i>Education</h2>
                 <span class="line"></span>
                 <div class="row mt-4 g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="p-3 bg-white shadow-sm rounded">
                             <h5>Shree Vasistha Vidhyalay</h5>
-                            <small class="text-muted">2016-2020</small>
+                            <small class="text-muted">2016-2021</small>
                             <p>7th to 10th</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="p-3 bg-white shadow-sm rounded">
                             <h5>Uka Tarsadia University</h5>
-                            <small class="text-muted">2021-2024</small>
+                            <small class="text-muted">2021-2025</small>
                             <p>Diploma in Computer Engineering</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="p-3 bg-white shadow-sm rounded">
                             <h5>Red & White Multimedia</h5>
-                            <small class="text-muted">2024-Present</small>
-                            <p>Full Stack Development</p>
+                            <small class="text-muted">2024-2025</small>
+                            <p>MERN Stack Development</p>
                         </div>
                     </div>
                 </div>
@@ -96,20 +97,31 @@
         <!-- SKILLS -->
         <section id="skill" class="py-5">
             <div class="container text-center">
-                <h2 class="fs-1 fw-bold mb-2">Skills</h2>
-                <span class="line"></span>
-                <div class="row mt-5 g-4 justify-content-center">
-                    <div class="col-4 col-md-2"><img src="img/html.png" alt="HTML" class="img-fluid">
+                <h2 class="fs-1 fw-bold mb-2 title">Skills</h2>
+                <div class="skill-slider mt-5">
+                    <div>
+                        <img src="img/html.png" alt="HTML">
                         <p>HTML</p>
                     </div>
-                    <div class="col-4 col-md-2"><img src="img/css.png" alt="CSS" class="img-fluid">
+                    <div>
+                        <img src="img/css.png" alt="CSS">
                         <p>CSS</p>
                     </div>
-                    <div class="col-4 col-md-2"><img src="img/bootstrap.jpg" alt="Bootstrap" class="img-fluid">
+                    <div>
+                        <img src="img/bootstrap.jpg" alt="Bootstrap">
                         <p>Bootstrap</p>
                     </div>
-                    <div class="col-4 col-md-2"><img src="img/react.png" alt="ReactJS" class="img-fluid">
+                    <div>
+                        <img src="img/react.png" alt="ReactJS">
                         <p>React JS</p>
+                    </div>
+                    <div>
+                        <img src="img/nodeJS.svg" alt="NodeJS">
+                        <p>Node JS</p>
+                    </div>
+                    <div>
+                        <img src="img/mongoDB.png" alt="MongoDB">
+                        <p>MongoDB</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +130,7 @@
         <!-- PORTFOLIO -->
         <section id="portfolio" class="py-5 bg-light">
             <div class="container text-center">
-                <h2 class="fs-1 fw-bold mb-2">Portfolio</h2>
+                <h2 class="fs-1 fw-bold mb-2 title">Portfolio</h2>
                 <span class="line"></span>
                 <div class="row g-4 mt-5">
                     <div class="col-md-12 col-lg-6">
@@ -164,7 +176,7 @@
         <!-- CONTACT -->
         <section id="contact" class="py-5">
             <div class="container text-center">
-                <h2 class="fs-1 fw-bold mb-2">Get in Touch</h2>
+                <h2 class="fs-1 fw-bold mb-2 title">Get in Touch</h2>
                 <span class="line"></span>
                 <div class="row mt-5">
                     <div class="col-lg-6 text-start">
@@ -195,7 +207,8 @@
             <p class="mb-2 mb-md-0">© 2024 Arth. All Rights Reserved.</p>
             <div>
                 <a href="https://github.com/arth1312" class="text-dark me-3"><i class="bi bi-github fs-4"></i></a>
-                <a href="https://www.linkedin.com/in/arth-koradiya-0b4a9b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-dark"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="https://www.linkedin.com/in/arth-koradiya-0b4a9b276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="text-dark"><i class="bi bi-linkedin fs-4"></i></a>
             </div>
         </div>
     </footer>
@@ -207,6 +220,35 @@
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.skill-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
 </body>
 
 </html>
